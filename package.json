@@ -1,0 +1,15 @@
+{
+	"name":              "code-to-svg",
+	"description":       "CLI tool to visualize code using SVG.",
+	"version":           "0.1.0",
+	"main":              "bin.js",
+	"files":             ["bin.js"],
+	"bin":               {"code-to-svg": "./bin.js"},
+	"preferGlobal":      true,
+	"keywords":          ["visualize", "code", "cli", "svg"],
+	"author":            "Jannis R <mail@jannisr.de>",
+	"homepage":          "https://github.com/derhuerst/code-to-svg",
+	"repository":        "git://github.com/derhuerst/code-to-svg.git",
+	"license":           "ISC",
+	"engines":           {"node": ">=5"}
+}
