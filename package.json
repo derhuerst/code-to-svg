@@ -11,5 +11,12 @@
 	"homepage":          "https://github.com/derhuerst/code-to-svg",
 	"repository":        "git://github.com/derhuerst/code-to-svg.git",
 	"license":           "ISC",
-	"engines":           {"node": ">=5"}
+	"engines":           {"node": ">=5"},
+	"dependencies": {
+		"yargs":           "^4.2",
+		"byline":          "^4.2.1",
+		"through2-spy":    "^2",
+		"code-svg-stream": "^0.2.2",
+		"wrap-stream":     "^2"
+	}
 }
