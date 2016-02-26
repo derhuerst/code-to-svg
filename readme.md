@@ -3,7 +3,7 @@
 **A CLI tool to visualize code's line length and indentation using SVG.**
 
 ```shell
-code-to-svg my-code-file
+code-to-svg my-code-file my-code-file.svg
 ```
 
 [![build status](https://img.shields.io/travis/derhuerst/code-to-svg.svg)](https://travis-ci.org/derhuerst/code-to-svg)
@@ -14,6 +14,17 @@ code-to-svg my-code-file
 
 ```
 npm install -g code-to-svg
+```
+
+
+## Usage
+
+```
+Usage:
+  code-svg-stream <input-file> [output-file] [-s]
+
+Options:
+  -s, --silent     No output
 ```
 
 
