@@ -18,6 +18,16 @@ const source = argv._[0]
 const dest =   argv._[1] || source + '.svg'
 const silent = (argv.silent === true) || (argv.s === true)
 
+if (argv.help || argv.h) {
+	process.stdout.write(`Usage:
+  code-svg-stream <input-file> [output-file] [-s]
+
+Options:
+  -s, --silent     No output
+` + '\n')
+	process.exit(0)
+}
+
 
 
 const count = (lines) => new Promise(function (resolve, reject) {
@@ -38,6 +48,7 @@ const onError = function (err) {
 log(source + ' -> ' + dest)
 count(byline(fs.createReadStream(source), {keepEmptyLines: true}))
 .then(function (lines) {
+
 	const head = `<svg xmlns="http://www.w3.org/2000/svg" \
 width="200" height="${lines * 20 - 20}" \
 viewBox="0 0 100 ${lines * 10 - 10}">
@@ -48,5 +59,6 @@ viewBox="0 0 100 ${lines * 10 - 10}">
 	.pipe(codeSVG({tabSize: 4})).on('error', onError)
 	.pipe(wrap(head, tail)).on('error', onError)
 	.pipe(fs.createWriteStream(dest)).on('error', onError)
-	.on('finish', () => console.info('done'))
+
+	.on('finish', log.bind({}, 'done'))
 }, onError)
