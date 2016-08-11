@@ -8,6 +8,7 @@ code-to-svg my-code-file my-code-file.svg
 
 [![build status](https://img.shields.io/travis/derhuerst/code-to-svg.svg)](https://travis-ci.org/derhuerst/code-to-svg)
 [![dependency status](https://img.shields.io/david/derhuerst/code-to-svg.svg)](https://david-dm.org/derhuerst/code-to-svg#info=dependencies)
+![ISC-licensed](https://img.shields.io/github/license/derhuerst/code-to-svg.svg)
 
 
 ## Installing

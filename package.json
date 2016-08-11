@@ -1,7 +1,7 @@
 {
 	"name":              "code-to-svg",
 	"description":       "CLI tool to visualize code using SVG.",
-	"version":           "0.1.1",
+	"version":           "0.1.2",
 	"main":              "bin.js",
 	"files":             ["bin.js"],
 	"bin":               {"code-to-svg": "./bin.js"},
@@ -14,7 +14,7 @@
 	"engines":           {"node": ">=5"},
 	"dependencies": {
 		"yargs":           "^4.2",
-		"byline":          "^4.2.1",
+		"byline":          "^5",
 		"through2-spy":    "^2",
 		"code-svg-stream": "^0.2.2",
 		"wrap-stream":     "^2"
