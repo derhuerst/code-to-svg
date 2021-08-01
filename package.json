@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"coffee-script": "^1.11.1",
 		"cheerio":       "^0.22",
-		"watchy":        "^0.6.6"
+		"watchy":        "^0.9.10"
 	},
 	"scripts": {
 		"test":          "coffee test/index.coffee",
