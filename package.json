@@ -13,7 +13,7 @@
 	"license":           "ISC",
 	"engines":           {"node": ">=5"},
 	"dependencies": {
-		"yargs":           "^6.2",
+		"yargs":           "^15.0.1",
 		"byline":          "^5",
 		"through2-spy":    "^2",
 		"code-svg-stream": "^0.2.2",
